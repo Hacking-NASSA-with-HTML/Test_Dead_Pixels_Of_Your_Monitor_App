@@ -19,7 +19,7 @@ document.getElementById('invisible').addEventListener('click', () => {
 
 });
 
-
+/*
 let removeHeadline = () => {
     let fadeTarget = document.getElementById('headline');
     let fadeEffect = setInterval(() => {
@@ -33,33 +33,43 @@ let removeHeadline = () => {
         }
     }, 50); 
 }
+*/
+/*
+let finalRemoveHeadline = () => {
+    let fadeTargetH1 = document.getElementById('headline');
+    let initialTargetStateH1 = fadeTargetH1.style.opacity = '1';
 
-let removeManualForUser = () => {
-    let toFadeTarget = document.getElementById('manualForUser');
-    let fadeEffectForManualForUser = setInterval(() => {
-        if (!toFadeTarget.style.opacity) {
-            toFadeTarget.style.opacity = 1;
-        }
-        if (toFadeTarget.style.opacity > 0) {
-            toFadeTarget.style.opacity -= 0.025;
-        } else {
-            clearInterval(fadeEffectForManualForUser);
-        }
-    }, 50); 
+    if (initialTargetStateH1) {
+        fadeTargetH1.style.opacity = '0';
+    }
+}*/
+
+/*
+let finalRemoveHeadline = () => {
+    document.getElementById('headline').style.opacity = '0';
+}
+*/
+/*
+let finalRemoveManualForUser = () => {
+    let fadeTargetP = document.getElementById('manualForUser');
+    let initialTargetStateP = fadeTargetP.style.opacity = '1';
+
+    if (initialTargetStateP) {
+        fadeTargetP.style.opacity = '0';
+    }
+}
+*/
+
+let hideTextCall = () => {    
+    setTimeout(() => {
+        /*finalRemoveHeadline();*/
+        document.getElementById('headline').style.opacity = '0';   
+    }, 3000);
+
+    setTimeout(() => {
+        /*finalRemoveManualForUser();*/
+        document.getElementById('manualForUser').style.opacity = '0';   
+    }, 9000);
 }
 
-
-
-let hideText = () => {
-    
-    setTimeout(() => {
-        removeHeadline();   
-    }, 7000);
-
-    setTimeout(() => {
-        removeManualForUser();   
-    }, 10000);
-
-}
-
-hideText();
+hideTextCall();
