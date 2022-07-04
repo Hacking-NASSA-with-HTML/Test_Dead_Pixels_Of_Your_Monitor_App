@@ -18,14 +18,26 @@
     transition: .7s ease;
 }
 
+/*
+Rubber font-size ! ! ! body {
+    font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+}
+
+body {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+*/
+
 h1 {
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: calc(26px + (36 - 26) * ((100vw - 300px) / (1600 - 300)));
     position: relative;
     z-index: 10;
 }
 
 .paragraph {
-    font-size: 26px;
+    /* font-size: 26px; */
+    font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
     margin-top: 50px;
     transition: 0.3s ease;
     position: relative;
