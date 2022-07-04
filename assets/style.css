@@ -67,7 +67,7 @@ h1 {
 }
 
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1019px) {
     #manualForUser {
         display: none;
     }
