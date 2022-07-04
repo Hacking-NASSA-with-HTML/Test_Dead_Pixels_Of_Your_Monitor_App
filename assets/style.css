@@ -66,3 +66,9 @@ h1 {
     right: 0;
     z-index: 1000;
 }
+
+@media only screen and (max-width: 1019px) {
+    #manualForUser {
+        display: none;
+    }
+}
