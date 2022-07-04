@@ -67,7 +67,8 @@ h1 {
     z-index: 1000;
 }
 
-@media only screen and (max-width: 1019px) {
+
+@media (max-width: 1019px) {
     #manualForUser {
         display: none;
     }
