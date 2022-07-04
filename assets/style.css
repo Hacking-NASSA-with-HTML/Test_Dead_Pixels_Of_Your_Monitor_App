@@ -39,7 +39,6 @@ h1 {
     /* font-size: 26px; */
     font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
     margin-top: 50px;
-    transition: 0.3s ease;
     position: relative;
     z-index: 10;
 }
